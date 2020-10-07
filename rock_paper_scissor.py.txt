@@ -1,0 +1,25 @@
+p1 = str(input("Enter rock,paper or scissor : "))
+p2 = str(input("Enter rock,paper or scissor : "))
+while p1 == p2:
+    print("It is a tie")
+    p1 = str(input("Enter rock,paper or scissor : "))
+    p2 = str(input("Enter rock,paper or scissor : "))
+if p1 in ("rock","scissor","paper") and p2 in ("rock","paper","scissor"): 
+
+    if p1 == "rock":
+        if p2 == "paper":
+             print("Player 2 won")
+        if p2 == "scissor":
+             print("Player 1 won")
+    elif p1 == "paper":
+        if p2 == "rock":
+            print("Player 1 won")
+        if p2 == "scissors":
+            print("Player 2 won")
+    elif p1 == "scissor":
+        if p2 == "rock":
+            print("Player 2 won")
+        if p2 == "paper":
+            print("Player 1 won")
+else:
+    print("You have entered wrong input")
